@@ -103,7 +103,7 @@
             <div class="side-box">
                      <div class="selected">
                         <h2> Selected-V</h2>
-                        <ol>
+                        <ol id="selected-player">
                             <li>hi</li>
                             <li>honny</li>
                             <li>bonny</li>
@@ -114,19 +114,19 @@
                     <div class="budget">
                         <h1 class="budget-title">Budget</h1>
                         <div><h4 class="input-text">per player</h4>
-                            <input type="text"></div>
+                            <input id="per-player-amount"type="text"></div>
                        
                         <div><button  id="calculate" class="btn-calculate">calculate</button></div>
                       
-                         <h4>Player expense $ <span>00</span></h4>
+                         <h4>Player expense $<span id="player-expense">00</span></h4>
                          <div><h4 class="input-text">Manager:</h4>
-                            <input type="text" name="" id=""></div>
+                            <input type="text" name="" id="manager-amount"></div>
                 
                          <div><h4 class="input-text">Coach:</h4>
-                            <input type="text"></div>
+                            <input type="text" id="coach-amount"></div>
                        
-                         <div><button class="btn-calculate"> Calculate Total</button></div>
-                         <h4>Total $<span>1100</span></h4>
+                         <div><button class="btn-calculate" id="total-calculate"> Calculate Total</button></div>
+                         <h4>Total $<span id="cost">00</span></h4>
                     </div>
                 </div>
             </div>
