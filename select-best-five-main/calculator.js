@@ -6,13 +6,6 @@
     return amount;
  }
 
-
- function clickedBy(){
-   
- }
- 
- 
- 
  document.getElementById('calculate').addEventListener('click',function(){
     const perplayerAmount=getElementValueById('per-player-amount');
 
@@ -30,14 +23,45 @@
  })
 
  document.getElementById('total-calculate').addEventListener('click',function(){
-    const managerAmount = document.getElementById('manager-amount');
-    const coachAmount= document.getElementById('coach-amount');
+   //  const managerAmount = document.getElementValueById('manager-amount');
+   //  const coachAmount= document.getElementValueById('coach-amount');
 
-    const playerAmount= document.getElementById('player-expense').innerText;
-    const totalCostAmount= playerAmount+managerAmount+coachAmount;
+   //  console.log(managerAmount,coachAmount);
 
-    const totalamount= document.getElementById('cost');
-    // totalamount.innerText= totalCostAmount;
-    console.log(totalamount.innerText=totalCostAmount);
+   //  const playerAmount= document.getElementById('player-expense').innerText;
+   //  const totalCostAmount= playerAmount+managerAmount+coachAmount;
+
+   //  const totalamount= document.getElementById('cost');
+   //  // totalamount.innerText= totalCostAmount;
+   // //  console.log(totalamount.innerText=totalCostAmount);
+   // totalamount.innerText=totalCostAmount;
     
- })
+const managerAmount = document.getElementById('manager-amount');
+const managerAmountInput = managerAmount.value;
+const managerAmountInputNumber = parseFloat(managerAmountInput);
+
+const coachAmount= document.getElementById('coach-amount');
+const coachAmountInput = coachAmount.value; 
+const coachAmountInputNumber = parseFloat(coachAmountInput);
+
+const totalAmount = managerAmountInputNumber + coachAmountInputNumber;
+
+
+const playerAmount = document.getElementById('player-expense');
+const playerAmountTotal = playerAmount.innerText;
+const playerAmountTotalNumber = parseFloat(playerAmountTotal);
+
+const playerTotal =  totalAmount + playerAmountTotalNumber;
+  
+
+
+
+const cost = document.getElementById('cost');
+cost.innerText = playerTotal;
+
+
+
+
+
+
+ });
