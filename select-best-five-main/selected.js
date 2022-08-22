@@ -102,7 +102,7 @@ document.getElementById('selected-btn4').addEventListener('click',function(){
 document.getElementById('selected-btn5').addEventListener('click',function(){
     //length check
     const selectedPlayerlength= document.querySelectorAll('#selected-player li');
-    if(selectedPlayerlength.length <= 5){
+    if(selectedPlayerlength.length < 5){
         // disabled btn
         const btnDesabaled= document.getElementById('selected-btn5');
         btnDesabaled.setAttribute('disabled',true);
