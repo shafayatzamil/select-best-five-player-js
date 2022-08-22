@@ -6,6 +6,10 @@
     return amount;
  }
 
+
+ function clickedBy(){
+   
+ }
  
  
  
@@ -35,8 +39,5 @@
     const totalamount= document.getElementById('cost');
     // totalamount.innerText= totalCostAmount;
     console.log(totalamount.innerText=totalCostAmount);
-
-   
-   
     
  })
